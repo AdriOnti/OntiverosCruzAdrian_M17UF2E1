@@ -1309,9 +1309,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 6578590073574770567}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 4411e5f05f079644681767afa6479a02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _maxRotation: {x: 0, y: 0, z: 0}
+  _minRotation: {x: 0, y: 0, z: 0}
+  ShootPoint: {fileID: 6578590074585065641}
+  Bullet: {fileID: 3310951103841112713, guid: 23530ee81f0a7b748a4ddbd0417f8776, type: 3}
+  ProjectileSpeed: 1
+  MaxSpeed: 8
+  MinSpeed: 0
+  PotencyBar: {fileID: 6578590074113617797}
 --- !u!4 &6578590073574770564
 Transform:
   m_ObjectHideFlags: 0
@@ -1715,7 +1723,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.49, y: 0, z: 0}
-  m_LocalScale: {x: 0.98, y: 0.8, z: 1}
+  m_LocalScale: {x: 0, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6578590074392310489}
@@ -1761,7 +1769,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 22
-  m_Sprite: {fileID: 7482667652216324306, guid: 3a92335461ce9d4459b6d290b5e02198, type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: 9cc27d2a740e3d94aa55c45b32c2199f, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1769,7 +1777,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &6578590074113617797
@@ -1882,13 +1890,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6578590074585065641}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.186, y: 0.29, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.3097522, w: 0.95081735}
+  m_LocalPosition: {x: 0.18600008, y: 0.29000005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6578590073574770564}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -36.089}
 --- !u!1 &6578590074585065641
 GameObject:
   m_ObjectHideFlags: 0
@@ -1948,7 +1956,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1.6839743
+  orthographic size: 1.8352354
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1991,7 +1999,7 @@ Transform:
   m_GameObject: {fileID: 6578590074744334291}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.54, y: 0.79, z: -10}
+  m_LocalPosition: {x: -0.56, y: 0.94, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
